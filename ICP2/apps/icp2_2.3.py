@@ -1,3 +1,5 @@
+import json
+
 from stanfordcorenlp import StanfordCoreNLP
 
 # Preset
@@ -6,11 +8,14 @@ port = 9000
 nlp = StanfordCoreNLP(host, port=port, timeout=30000)
 
 # The sentence you want to parse
-with open('inputfile1.txt', 'r') as file:
+with open('inputfile.txt', 'r') as file:
     data = file.read().replace('\n', '')
 
-# POS
-print('POS：', nlp.pos_tag(data))
+result = json.loads(nlp.annotate(data, properties={'annotators': 'coref', 'pipelineLanguage': 'en'}))
+
+num, mentions = result['corefs'].items()[0]
+for mention in mentions:
+    print(mention)
 
 # Close Stanford Parser
 nlp.close()

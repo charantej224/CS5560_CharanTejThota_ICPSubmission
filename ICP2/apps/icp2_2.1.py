@@ -9,8 +9,8 @@ nlp = StanfordCoreNLP(host, port=port, timeout=30000)
 with open('inputfile1.txt', 'r') as file:
     data = file.read().replace('\n', '')
 
-# POS
-print('POS：', nlp.pos_tag(data))
+# NER
+print('NER：', nlp.ner(data))
 
 # Close Stanford Parser
 nlp.close()
