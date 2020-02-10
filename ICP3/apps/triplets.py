@@ -1,7 +1,7 @@
 import spacy
 import textacy
 
-text = "Brack Obama was born in Hawaii"
+text = "Brack Obama was born in Hawaii.charan plays for India"
 
 nlp = spacy.load('en_core_web_sm')
 for sentence in text.split("."):
