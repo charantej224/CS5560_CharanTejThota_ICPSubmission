@@ -5,7 +5,7 @@ from pyspark.sql import SparkSession
 # creating spark session
 spark = SparkSession.builder.appName("TfIdf Example").getOrCreate()
 
-# creating spark dataframe wiht the input data. You can also read the data from file. label represents the 3 documnets (0.0,0.1,0.2)
+# creating spark dataframe with the input data. You can also read the data from file. label represents the 3 documnets (0.0,0.1,0.2)
 sentenceData = spark.createDataFrame([
     (0.0, "Welcome to KDM TF_IDF Tutorial."),
     (0.1, "Learn Spark ml tf_idf in today's lab."),
