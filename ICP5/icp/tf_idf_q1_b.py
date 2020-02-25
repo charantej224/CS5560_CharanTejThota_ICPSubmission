@@ -27,7 +27,7 @@ documents.printSchema()
 # creating tokens/words from the sentence data
 tokenizer = Tokenizer(inputCol="value", outputCol="words")
 wordsData = tokenizer.transform(documents)
-wordsData.show()
+wordsData.show(truncate=False)
 
 stemmer = SnowballStemmer(language='english')
 stemmer_udf = F.udf(lambda tokens: [stemmer.stem(token) for token in tokens], ArrayType(StringType()))
@@ -45,7 +45,7 @@ idfModel = idf.fit(featurizedData)
 rescaledData = idfModel.transform(featurizedData)
 
 # displaying the results
-rescaledData.select("doc_id", "features").show()
+rescaledData.select("doc_id", "features").show(truncate=False)
 
 # closing the spark session
 spark.stop()

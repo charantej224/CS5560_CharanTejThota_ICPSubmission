@@ -25,6 +25,6 @@ idfModel = idf.fit(featurizedData)
 rescaledData = idfModel.transform(featurizedData)
 
 # displaying the results
-rescaledData.select("doc_id", "features").show(truncate=True)
+rescaledData.select("doc_id", "features").show(truncate=False)
 # closing the spark session
 spark.stop()
