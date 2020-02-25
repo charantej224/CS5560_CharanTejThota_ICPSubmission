@@ -1,10 +1,12 @@
 from pyspark.ml.feature import HashingTF, IDF, Tokenizer
-from pyspark.sql import SparkSession
+from pyspark.sql import SparkSession, Window
 from pyspark.sql.functions import monotonically_increasing_id
+import pyspark.sql.functions as F
 
-spark = SparkSession.builder.appName("TfIdf Example").getOrCreate()
+spark = SparkSession.builder.appName("TfIdf-tokenizing").getOrCreate()
 documents = spark.read.text("dataset/*.txt")
-documents = documents.withColumn("doc_id", monotonically_increasing_id())
+#documents = documents.withColumn("doc_id", monotonically_increasing_id())
+documents = documents.withColumn("doc_id", F.row_number().over(Window.orderBy('value')))
 
 documents.printSchema()
 # creating tokens/words from the sentence data
