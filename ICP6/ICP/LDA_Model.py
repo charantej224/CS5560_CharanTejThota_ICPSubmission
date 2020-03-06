@@ -86,10 +86,10 @@ print(corpus[:1])
 print([[(dictionary[id], freq) for id, freq in cp] for cp in corpus[:1]])
 
 # LDA
-ldamodel = gensim.models.ldamodel.LdaModel(corpus, num_topics=7, id2word=dictionary, passes=15)
+ldamodel = gensim.models.ldamodel.LdaModel(corpus, num_topics=6, id2word=dictionary, passes=15)
 # saving the model
 ldamodel.save('model_combined.gensim')
-topics = ldamodel.print_topics(num_words=4)
+topics = ldamodel.print_topics(num_words=1)
 print('\n')
 print("Now printing the topics and their composition")
 print("This output shows the Topic-Words matrix for the 7 topics created and the 4 words within each topic")
