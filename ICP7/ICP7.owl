@@ -1,0 +1,210 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/charan/ontologies/2020/2/ICP7#"
+     xml:base="http://www.semanticweb.org/charan/ontologies/2020/2/ICP7"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:ICP7="http://www.semanticweb.org/charan/ontologies/2020/2/ICP7#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/charan/ontologies/2020/2/ICP7"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/charan/ontologies/2020/2/ICP7#eat -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/charan/ontologies/2020/2/ICP7#eat">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/charan/ontologies/2020/2/ICP7#Pets"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/charan/ontologies/2020/2/ICP7#home_prepared"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/charan/ontologies/2020/2/ICP7#eaten -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/charan/ontologies/2020/2/ICP7#eaten">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/charan/ontologies/2020/2/ICP7#hunt"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/charan/ontologies/2020/2/ICP7#Wild"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/charan/ontologies/2020/2/ICP7#growl -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/charan/ontologies/2020/2/ICP7#growl">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/charan/ontologies/2020/2/ICP7#Wild"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/charan/ontologies/2020/2/ICP7#hunt -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/charan/ontologies/2020/2/ICP7#hunt">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/charan/ontologies/2020/2/ICP7#Wild"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/charan/ontologies/2020/2/ICP7#hunt"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/charan/ontologies/2020/2/ICP7#roar -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/charan/ontologies/2020/2/ICP7#roar">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/charan/ontologies/2020/2/ICP7#Animals"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/charan/ontologies/2020/2/ICP7#Food"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/charan/ontologies/2020/2/ICP7#Animals -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/charan/ontologies/2020/2/ICP7#Animals"/>
+    
+
+
+    <!-- http://www.semanticweb.org/charan/ontologies/2020/2/ICP7#Food -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/charan/ontologies/2020/2/ICP7#Food"/>
+    
+
+
+    <!-- http://www.semanticweb.org/charan/ontologies/2020/2/ICP7#Pets -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/charan/ontologies/2020/2/ICP7#Pets">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/charan/ontologies/2020/2/ICP7#Animals"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/charan/ontologies/2020/2/ICP7#Wild -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/charan/ontologies/2020/2/ICP7#Wild">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/charan/ontologies/2020/2/ICP7#Animals"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/charan/ontologies/2020/2/ICP7#home_prepared -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/charan/ontologies/2020/2/ICP7#home_prepared">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/charan/ontologies/2020/2/ICP7#Food"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/charan/ontologies/2020/2/ICP7#hunt -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/charan/ontologies/2020/2/ICP7#hunt">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/charan/ontologies/2020/2/ICP7#Food"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/charan/ontologies/2020/2/ICP7#Deer -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/charan/ontologies/2020/2/ICP7#Deer">
+        <rdf:type rdf:resource="http://www.semanticweb.org/charan/ontologies/2020/2/ICP7#hunt"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/charan/ontologies/2020/2/ICP7#Dog -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/charan/ontologies/2020/2/ICP7#Dog">
+        <rdf:type rdf:resource="http://www.semanticweb.org/charan/ontologies/2020/2/ICP7#Pets"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/charan/ontologies/2020/2/ICP7#cat -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/charan/ontologies/2020/2/ICP7#cat">
+        <rdf:type rdf:resource="http://www.semanticweb.org/charan/ontologies/2020/2/ICP7#Pets"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/charan/ontologies/2020/2/ICP7#cooked_chicken -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/charan/ontologies/2020/2/ICP7#cooked_chicken">
+        <rdf:type rdf:resource="http://www.semanticweb.org/charan/ontologies/2020/2/ICP7#home_prepared"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/charan/ontologies/2020/2/ICP7#cooked_fish -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/charan/ontologies/2020/2/ICP7#cooked_fish">
+        <rdf:type rdf:resource="http://www.semanticweb.org/charan/ontologies/2020/2/ICP7#home_prepared"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/charan/ontologies/2020/2/ICP7#elephant -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/charan/ontologies/2020/2/ICP7#elephant">
+        <rdf:type rdf:resource="http://www.semanticweb.org/charan/ontologies/2020/2/ICP7#Wild"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/charan/ontologies/2020/2/ICP7#impala -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/charan/ontologies/2020/2/ICP7#impala">
+        <rdf:type rdf:resource="http://www.semanticweb.org/charan/ontologies/2020/2/ICP7#hunt"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/charan/ontologies/2020/2/ICP7#lion -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/charan/ontologies/2020/2/ICP7#lion">
+        <rdf:type rdf:resource="http://www.semanticweb.org/charan/ontologies/2020/2/ICP7#Wild"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/charan/ontologies/2020/2/ICP7#tiger -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/charan/ontologies/2020/2/ICP7#tiger">
+        <rdf:type rdf:resource="http://www.semanticweb.org/charan/ontologies/2020/2/ICP7#Wild"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
