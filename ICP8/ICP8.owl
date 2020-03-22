@@ -1,0 +1,159 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/charan/ontologies/2020/2/icp8#"
+     xml:base="http://www.semanticweb.org/charan/ontologies/2020/2/icp8"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/charan/ontologies/2020/2/icp8"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/charan/ontologies/2020/2/icp8#first -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/charan/ontologies/2020/2/icp8#first">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/charan/ontologies/2020/2/icp8#sachin_ramesh_tendulkar"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/charan/ontologies/2020/2/icp8#double_century"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/charan/ontologies/2020/2/icp8#greatest -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/charan/ontologies/2020/2/icp8#greatest">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/charan/ontologies/2020/2/icp8#sachin_ramesh_tendulkar"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/charan/ontologies/2020/2/icp8#batsman"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/charan/ontologies/2020/2/icp8#highest -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/charan/ontologies/2020/2/icp8#highest">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/charan/ontologies/2020/2/icp8#sachin_ramesh_tendulkar"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/charan/ontologies/2020/2/icp8#Century"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/charan/ontologies/2020/2/icp8#Runs"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/charan/ontologies/2020/2/icp8#played -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/charan/ontologies/2020/2/icp8#played">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/charan/ontologies/2020/2/icp8#sachin_ramesh_tendulkar"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/charan/ontologies/2020/2/icp8#cricket"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/charan/ontologies/2020/2/icp8#represented -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/charan/ontologies/2020/2/icp8#represented">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/charan/ontologies/2020/2/icp8#sachin_ramesh_tendulkar"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/charan/ontologies/2020/2/icp8#Indian_national_team"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/charan/ontologies/2020/2/icp8#International_Cricket"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/charan/ontologies/2020/2/icp8#One_day_International"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/charan/ontologies/2020/2/icp8#Test_Cricket_International"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/charan/ontologies/2020/2/icp8#Century -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/charan/ontologies/2020/2/icp8#Century">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/charan/ontologies/2020/2/icp8#Runs"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/charan/ontologies/2020/2/icp8#Indian_national_team -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/charan/ontologies/2020/2/icp8#Indian_national_team">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/charan/ontologies/2020/2/icp8#International_Cricket"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/charan/ontologies/2020/2/icp8#International_Cricket -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/charan/ontologies/2020/2/icp8#International_Cricket">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/charan/ontologies/2020/2/icp8#cricket"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/charan/ontologies/2020/2/icp8#One_day_International -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/charan/ontologies/2020/2/icp8#One_day_International">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/charan/ontologies/2020/2/icp8#cricket"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/charan/ontologies/2020/2/icp8#Runs -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/charan/ontologies/2020/2/icp8#Runs"/>
+    
+
+
+    <!-- http://www.semanticweb.org/charan/ontologies/2020/2/icp8#Test_Cricket_International -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/charan/ontologies/2020/2/icp8#Test_Cricket_International">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/charan/ontologies/2020/2/icp8#cricket"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/charan/ontologies/2020/2/icp8#batsman -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/charan/ontologies/2020/2/icp8#batsman"/>
+    
+
+
+    <!-- http://www.semanticweb.org/charan/ontologies/2020/2/icp8#cricket -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/charan/ontologies/2020/2/icp8#cricket"/>
+    
+
+
+    <!-- http://www.semanticweb.org/charan/ontologies/2020/2/icp8#double_century -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/charan/ontologies/2020/2/icp8#double_century">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/charan/ontologies/2020/2/icp8#Runs"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/charan/ontologies/2020/2/icp8#sachin_ramesh_tendulkar -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/charan/ontologies/2020/2/icp8#sachin_ramesh_tendulkar"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
